@@ -1,25 +1,27 @@
 'use client'
 
 import { useEffect } from "react";
-import axios from "axios";
+// import axios from "axios";
 
 export default function Home() {
   useEffect(() => {
     const func = async() => {
-      axios.post("/api/test", obj, {
-        headers: {
-          "Content-Type": "application/json"
-        }
-      }).then(() => {
-        console.log("hello")
-      })
-      // fetch("/api/test",{
-      //   method: "POST",
-      //   headers:{
-      //     "Content-Type":"application/json"
-      // },
-      // body:JSON.stringify(obj)
+      // navigator.sendBeacon("/api/test",)
+      // axios.post("/api/test", obj, {
+      //   headers: {
+      //     "Content-Type": "application/json"
+      //   }
+      // }).then(() => {
+      //   console.log("hello")
       // })
+      fetch("/api/test",{
+        method: "POST",
+        // keepalive: true,
+        headers:{
+          "Content-Type":"application/json"
+      },
+      body:JSON.stringify(obj)
+      })
     }
     window.addEventListener('beforeunload', func)
     return () => {
