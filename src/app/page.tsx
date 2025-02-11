@@ -16,7 +16,7 @@ export default function Home() {
       // })
       fetch("/api/test",{
         method: "POST",
-        // keepalive: true,
+        keepalive: true,
         headers:{
           "Content-Type":"application/json"
       },
