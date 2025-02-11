@@ -122,6 +122,22 @@ const obj ={
           "postalCode": "150-0021",
           "country": "日本"
         }
+      },
+      {
+        "id": 6,
+        "name": "加藤亮",
+        "position": "営業",
+        "email": "ryo.kato@sample.com",
+        "phone": "03-6789-0123",
+        "hireDate": "2017-04-01",
+        "salary": 7000000,
+        "department": "営業",
+        "address": {
+          "street": "東京都中央区銀座4丁目",
+          "city": "東京",
+          "postalCode": "104-0061",
+          "country": "日本"
+        }
       }
     ],
     "projects": [
@@ -186,45 +202,92 @@ const obj ={
             "role": "デザイナー"
           }
         ]
+      },
+      {
+        "id": 104,
+        "name": "プロジェクトD",
+        "description": "新しい広告キャンペーンの立案と実行。",
+        "startDate": "2023-05-10",
+        "endDate": "2023-08-31",
+        "budget": 6000000,
+        "teamMembers": [
+          {
+            "employeeId": 4,
+            "role": "リーダー"
+          },
+          {
+            "employeeId": 5,
+            "role": "デザイナー"
+          }
+        ]
+      }
+    ],
+    "clients": [
+      {
+        "id": 201,
+        "name": "クライアントA",
+        "industry": "製造業",
+        "contactPerson": "田村信二",
+        "email": "shinji.tamura@clientA.com",
+        "phone": "03-1234-9876",
+        "projects": [101, 102]
+      },
+      {
+        "id": 202,
+        "name": "クライアントB",
+        "industry": "小売業",
+        "contactPerson": "佐藤美月",
+        "email": "miyuki.sato@clientB.com",
+        "phone": "03-2345-8765",
+        "projects": [103, 104]
+      }
+    ],
+    "revenue": {
+      "2023": 50000000,
+      "2024": 65000000
+    },
+    "expenses": {
+      "2023": 35000000,
+      "2024": 42000000
+    },
+    "products": [
+      {
+        "id": 301,
+        "name": "製品A",
+        "category": "ソフトウェア",
+        "price": 10000,
+        "quantityInStock": 500,
+        "description": "Webアプリケーション向けの管理ツール。",
+        "releaseDate": "2023-02-01"
+      },
+      {
+        "id": 302,
+        "name": "製品B",
+        "category": "ハードウェア",
+        "price": 20000,
+        "quantityInStock": 300,
+        "description": "新型スマートフォン。",
+        "releaseDate": "2023-05-10"
+      },
+      {
+        "id": 303,
+        "name": "製品C",
+        "category": "サービス",
+        "price": 5000,
+        "quantityInStock": 1000,
+        "description": "クラウドストレージサービス。",
+        "releaseDate": "2023-08-15"
+      },
+      {
+        "id": 304,
+        "name": "製品D",
+        "category": "サービス",
+        "price": 7000,
+        "quantityInStock": 800,
+        "description": "セキュリティサービス。",
+        "releaseDate": "2023-10-01"
       }
     ]
-  },
-  "products": [
-    {
-      "id": 201,
-      "name": "製品A",
-      "category": "ソフトウェア",
-      "price": 10000,
-      "quantityInStock": 500,
-      "description": "Webアプリケーション向けの管理ツール。",
-      "releaseDate": "2023-02-01"
-    },
-    {
-      "id": 202,
-      "name": "製品B",
-      "category": "ハードウェア",
-      "price": 20000,
-      "quantityInStock": 300,
-      "description": "新型スマートフォン。",
-      "releaseDate": "2023-05-10"
-    },
-    {
-      "id": 203,
-      "name": "製品C",
-      "category": "サービス",
-      "price": 5000,
-      "quantityInStock": 1000,
-      "description": "クラウドストレージサービス。",
-      "releaseDate": "2023-08-15"
-    }
-  ],
-  "revenue": {
-    "2023": 50000000,
-    "2024": 65000000
-  },
-  "expenses": {
-    "2023": 35000000,
-    "2024": 42000000
   }
 }
 
