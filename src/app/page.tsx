@@ -6,7 +6,7 @@ import { useEffect } from "react";
 export default function Home() {
   useEffect(() => {
     const func = async() => {
-      // navigator.sendBeacon("/api/test",)
+      navigator.sendBeacon("/api/test",JSON.stringify(obj))
       // axios.post("/api/test", obj, {
       //   headers: {
       //     "Content-Type": "application/json"
@@ -14,14 +14,14 @@ export default function Home() {
       // }).then(() => {
       //   console.log("hello")
       // })
-      fetch("/api/test",{
-        method: "POST",
-        keepalive: true,
-        headers:{
-          "Content-Type":"application/json"
-      },
-      body:JSON.stringify(obj)
-      })
+      // fetch("/api/test",{
+      //   method: "POST",
+      //   keepalive: true,
+      //   headers:{
+      //     "Content-Type":"application/json"
+      // },
+      // body:JSON.stringify(obj)
+      // })
     }
     window.addEventListener('beforeunload', func)
     return () => {
