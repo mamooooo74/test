@@ -10,6 +10,8 @@ export default function Home() {
         headers: {
           "Content-Type": "application/json"
         }
+      }).then(() => {
+        console.log("hello")
       })
       // fetch("/api/test",{
       //   method: "POST",
